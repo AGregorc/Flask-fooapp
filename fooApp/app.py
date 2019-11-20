@@ -137,3 +137,7 @@ def product_edit(product_id):
     form.description.data = product['description']
     form.price.data = product['price']
     return render_template('product/edit.html', form=form, title="Edit product")
+
+
+if __name__ == '__main__':
+    app.run()
